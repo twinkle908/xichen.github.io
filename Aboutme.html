@@ -1,8 +1,26 @@
 <!DOCTYPE html>
+<html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript">
+
+<!-->
+
+var image1=new Image()
+image1.src="http://i.imgur.com/bAbF1L7.jpg"
+var image2=new Image()
+image2.src="http://i.imgur.com/wiu6OYS.jpg"
+var image3=new Image()
+image3.src="http://i.imgur.com/9mt3NSc.jpg"
+
+//--
+
+</script>         
+
   
 </head>
+
 <body>
   
   <div class="top"> 
@@ -15,34 +33,45 @@
   <div class="middle">
     <img src="http://i.imgur.com/q57FZUw.jpg?1">
 
-    <article>
+   
       <h2>A little introduction</h2>
-      <p>Hopelessly curious, I would like to be a "Jack(ie) of all trades and maybe master of a few things". I have an academic background in Business and Economics and later I dabbled into journalism as well. I am currently based in Asia and have just embarked on an entrepreneurial journey. I am motivated by learning, creativity and personal growth and I believe in following your bliss in life and contributing something meaningful and positive to the world in the meantime. In my spare time, I like </p> 
-    </article>
+      <p>  Forever curious, I would like to be a "Jack(ie) of all trades and maybe master of a few things". I have an academic background in Business and Economics and later I dabbled into journalism as well. I am currently based in Asia and have just embarked on an entrepreneurial journey. I am motivated by learning, creativity and personal growth and I believe in following one's bliss in life and contributing something meaningful and positive to the world in the meantime. </p> 
+    
 
-    <article>
-      <h2>What I used to do?</h2>
-      I used to work as bond trader for few years in Hong Kong for Citigroup and subsequently I worked as a business/financial journalist for a few different publications. 
+       <h2>What I used to do?</h2>
+       <p>I used to work as bond trader for three years in Hong Kong for Citigroup and subsequently I worked as a business/financial journalist at different locations in the world. My latest job which I left earlier this year was working as a communication manager for a Private Equity company.  </p>
 
-      <p></p>
-
-    <article>
+    
       <h2> Contact Information</h2>
-      <p> My email address is xichen908@gmail.com, my phone number is +65 8321 7248. I can also be found on twitter @xcmeander. </p>
+      <p> My email address is <a href="mailto:xichen908@gmail.com">xichen908@gmail.com</a>, my phone number is +65 8321 7248. I can also be found on twitter <a href="https://twitter.com/xcmeander">@xcmeander</a>.</p>
 
-
+      <h2>A few of my favourite activities</h2>
 
   </div>
 
-  <div class="bottom">
-  <img src="http://i.imgur.com/1ghk1aX.jpg?2">
-  <h1>Join me daydreaming in my cloud</h1>
-  </div>
+  
+<div>
+  <img src="http://i.imgur.com/bAbF1L7.jpg" name="slide" width="600" height="400">
+
+</div>
+
+  
+
     
-    
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
+ <script type="text/javascript">
+ <!--
+ var step=1
+ function slideit()
+ document.images.slide.src=eval("image"+step+".src")
+ if(step<3)
+  step++
+else
+  step=1
+setTimeout()("slideit()",2000)
+}
+slideit()
+//-->
+
+</script>
 </body>
+</html>
